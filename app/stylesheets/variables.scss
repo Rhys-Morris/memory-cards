@@ -6,4 +6,12 @@
   --color-bg: #eee;
 
   font-size: 62.5%;
+
+  @media only screen and (max-width: 800px) {
+    font-size: 56.25%;
+  }
+
+  @media only screen and (max-width: 500px) {
+    font-size: 50%;
+  }
 }

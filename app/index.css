@@ -6,6 +6,16 @@
   --color-bg: #eee;
   font-size: 62.5%;
 }
+@media only screen and (max-width: 800px) {
+  :root {
+    font-size: 56.25%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  :root {
+    font-size: 50%;
+  }
+}
 
 *,
 *::before,
@@ -85,15 +95,15 @@ li {
 }
 @media only screen and (max-width: 1000px) {
   .card {
-    width: 15rem;
-    height: 15rem;
+    width: 20rem;
+    height: 20rem;
     margin: 1.5rem;
   }
 }
 @media only screen and (max-width: 450px) {
   .card {
-    height: 12rem;
-    width: 12rem;
+    height: 16rem;
+    width: 16rem;
     margin: 0.8rem;
   }
 }
