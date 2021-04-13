@@ -74,8 +74,8 @@ li {
 }
 
 .card {
-  width: 28rem;
-  height: 28rem;
+  width: 24rem;
+  height: 24rem;
   padding: 1rem;
   border: 2px solid #444;
   border-radius: 0.5rem;
@@ -98,7 +98,7 @@ li {
   }
 }
 .card:hover {
-  transform: scale(1.02);
+  transform: translateY(-2px);
   border: 2px solid var(--color-primary);
   cursor: pointer;
 }
@@ -128,7 +128,7 @@ li {
   animation: 1.2s ease-out infinite rattle;
 }
 .loading__text {
-  font-size: 3.6rem;
+  font-size: 3rem;
   font-weight: 300;
   text-transform: uppercase;
   margin-bottom: 2rem;
