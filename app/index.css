@@ -115,7 +115,7 @@ li {
 @media only screen and (max-width: 1000px) {
   .card:hover {
     transform: none;
-    borer: 2px solid var(--color-font);
+    border: 2px solid var(--color-font);
   }
 }
 
