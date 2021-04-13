@@ -99,10 +99,6 @@ li {
     height: 20rem;
     margin: 1.5rem;
   }
-  .card:hover {
-    transform: none;
-    border: 2px solid var(--color-font);
-  }
 }
 @media only screen and (max-width: 450px) {
   .card {
@@ -115,6 +111,12 @@ li {
   transform: translateY(-2px);
   border: 2px solid var(--color-primary);
   cursor: pointer;
+}
+@media only screen and (max-width: 1000px) {
+  .card:hover {
+    transform: none;
+    borer: 2px solid var(--color-font);
+  }
 }
 
 .footer {
