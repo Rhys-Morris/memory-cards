@@ -146,7 +146,7 @@ export default class Game extends React.Component {
             <React.Fragment>
               <h2 className="content__header">Level {level}</h2>
               <p className="content__instructions">
-                To progress to the next level click on each image only once!
+                To progress to the next level click on each pokemon only once!
                 Good luck!
               </p>
               <ul className="card-box">
