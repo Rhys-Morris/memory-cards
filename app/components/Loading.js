@@ -5,13 +5,13 @@ export default class Loading extends React.Component {
     super(props);
 
     this.state = {
-      loadingText: "Loading",
+      loadingText: "Catching Pokemon",
     };
   }
 
   componentDidMount() {
     this.interval = setInterval(() => {
-      if (this.state.loadingText === "Loading...") {
+      if (this.state.loadingText === "Catching Pokemon...") {
         this.setState({
           loadingText: "Loading",
         });
@@ -32,10 +32,6 @@ export default class Loading extends React.Component {
     return (
       <div className="loading">
         <h3 className="loading__text">{loadingText}</h3>
-        <img
-          className="loading__image"
-          src="https://www.pinclipart.com/picdir/big/366-3668322_pokmon-pokball-pokeball-png-clipart.png"
-        />
       </div>
     );
   }

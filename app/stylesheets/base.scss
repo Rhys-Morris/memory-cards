@@ -8,7 +8,7 @@
 
 html {
   font-weight: 400;
-  font-size: 75%;
+  font-size: 62.5%;
   font-family: Arial, Helvetica, sans-serif;
   color: var(--color-font);
   min-height: 100vh;
@@ -38,13 +38,13 @@ main {
   &__header {
     margin-bottom: 2rem;
     text-transform: uppercase;
-    font-size: 3.5rem;
+    font-size: 4.5rem;
     font-weight: 300;
   }
 
   &__instructions {
     margin-bottom: 3rem;
-    font-size: 1.4rem;
+    font-size: 2rem;
   }
 }
 

@@ -13,8 +13,8 @@
 }
 
 .card {
-  width: 25rem;
-  height: 25rem;
+  width: 28rem;
+  height: 28rem;
   padding: 1rem;
   border: 2px solid #444;
   border-radius: 0.5rem;
@@ -71,7 +71,7 @@
   }
 
   &__text {
-    font-size: 3rem;
+    font-size: 3.6rem;
     font-weight: 300;
     text-transform: uppercase;
     margin-bottom: 2rem;
@@ -132,7 +132,7 @@
   &__score-div {
     display: flex;
     align-items: center;
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     font-weight: 300;
 
     & > * {
@@ -160,13 +160,13 @@
   justify-content: center;
 
   &__header {
-    font-size: 2.8rem;
+    font-size: 3.2rem;
     font-weight: 300;
     margin-bottom: 1rem;
   }
 
   &__score {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     margin-bottom: 4rem;
   }
 }
@@ -174,13 +174,13 @@
 .btn {
   margin-top: 7.5rem;
   width: 100%;
-  padding: 0.8rem 1.25rem;
+  padding: 1rem 1.5rem;
   background-color: var(--color-font);
   color: var(--color-bg);
   border: none;
   outline: none;
   text-transform: uppercase;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   border-radius: 3px;
 
   &:hover {
