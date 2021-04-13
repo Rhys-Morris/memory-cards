@@ -13,8 +13,8 @@
 }
 
 .card {
-  width: 20rem;
-  height: 20rem;
+  width: 25rem;
+  height: 25rem;
   padding: 1rem;
   border: 2px solid #444;
   border-radius: 0.5rem;
@@ -75,21 +75,6 @@
     font-weight: 300;
     text-transform: uppercase;
     margin-bottom: 2rem;
-  }
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  25% {
-    transform: scale(1.05);
-  }
-  75% {
-    transform: scale(0.95);
-  }
-  100% {
-    transform: scale(1);
   }
 }
 
