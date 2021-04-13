@@ -2,9 +2,11 @@
   "name": "memory-cards",
   "version": "1.0.0",
   "description": "A memory game",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack",
+    "start": "webpack serve",
+    "watch-sass": "sass --watch ./app/stylesheets/main.scss ./app/index.css"
   },
   "author": "Rhys Morris",
   "license": "ISC",
@@ -20,6 +22,7 @@
     "babel-loader": "^8.2.2",
     "css-loader": "^5.2.1",
     "html-webpack-plugin": "^5.3.1",
+    "sass": "^1.32.8",
     "style-loader": "^2.0.0",
     "webpack": "^5.32.0",
     "webpack-cli": "^4.6.0",
