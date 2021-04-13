@@ -1,0 +1,39 @@
+import React from "react";
+
+export default class Loading extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      loadingText: "Loading",
+    };
+  }
+
+  componentDidMount() {
+    this.interval = setInterval(() => {
+      if (this.state.loadingText === "Loading...") {
+        this.setState({
+          loadingText: "Loading",
+        });
+      } else {
+        this.setState((state) => ({
+          loadingText: state.loadingText + ".",
+        }));
+      }
+    }, 300);
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.interval);
+  }
+
+  render() {
+    const { loadingText } = this.state;
+    return (
+      <div className="loading">
+        <h3 className="loading__text">{loadingText}</h3>
+        <img className="loading__image" src="../assets/pokeball.png" />
+      </div>
+    );
+  }
+}

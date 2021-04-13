@@ -2,9 +2,9 @@
   "name": "memory-cards",
   "version": "1.0.0",
   "description": "A memory game",
-  "main": "./dist/index.js",
+  "main": "./app/index.js",
   "scripts": {
-    "build-dev": "webpack",
+    "build": "webpack",
     "start": "webpack serve",
     "watch-sass": "sass --watch ./app/stylesheets/main.scss ./app/index.css"
   },
