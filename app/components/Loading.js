@@ -13,7 +13,7 @@ export default class Loading extends React.Component {
     this.interval = setInterval(() => {
       if (this.state.loadingText === "Catching Pokemon...") {
         this.setState({
-          loadingText: "Loading",
+          loadingText: "Catching Pokemon",
         });
       } else {
         this.setState((state) => ({
