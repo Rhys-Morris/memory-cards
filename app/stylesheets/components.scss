@@ -26,6 +26,11 @@
     width: 20rem;
     height: 20rem;
     margin: 1.5rem;
+
+    &:hover {
+      transform: none;
+      border: 2px solid var(--color-font);
+    }
   }
 
   @media only screen and (max-width: 450px) {
@@ -83,6 +88,7 @@
     font-weight: 300;
     text-transform: uppercase;
     margin-bottom: 2rem;
+    text-align: center;
   }
 }
 
