@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 
 export default function Reset({ resetGame, level, score }) {
   return (
@@ -10,4 +11,10 @@ export default function Reset({ resetGame, level, score }) {
       </button>
     </div>
   );
+}
+
+Reset.propTypes = {
+  resetGame: PropTypes.func.isRequired,
+  level: PropTypes.number.isRequired,
+  score: PropTypes.number.isRequired
 }

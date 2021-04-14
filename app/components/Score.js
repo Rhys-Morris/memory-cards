@@ -1,6 +1,7 @@
 import React from "react";
+import PropTypes from 'prop-types';
 
-export default function Score({ score, highScore, level }) {
+export default function Score({ score, highScore }) {
   return (
     <div className="score">
       <h2 className="score__header">
@@ -16,4 +17,9 @@ export default function Score({ score, highScore, level }) {
       </div>
     </div>
   );
+}
+
+Score.propTypes = {
+  score: PropTypes.number.isRequired,
+  highScore: PropTypes.number.isRequired
 }
