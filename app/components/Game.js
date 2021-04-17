@@ -1,6 +1,7 @@
 import React from "react";
 import Score from "./Score.js";
 import { fetchPokemon, randomNumber } from "../utils/api.js";
+import { checkArrayEquality } from "../utils/helpers.js";
 import Card from "./Card.js";
 import Loading from "./Loading.js";
 import Footer from "./Footer.js";
@@ -74,7 +75,6 @@ export default class Game extends React.Component {
   }
 
   handleNextLevel() {
-    console.log("Next level!");
     this.setState(({ cards, level }) => ({
       cards: cards + 2,
       level: level + 1,
@@ -123,8 +123,10 @@ export default class Game extends React.Component {
         newArray.push(cards[randomIndex]);
       }
     }
-    // Guard against no position shuffling
-    if (newArray === cards) return this.shuffleCards(cards);
+    // Guard against no position shuffling 
+    if (checkArrayEquality(cards, newArray)) {
+      return this.shuffleCards(cards);
+    }
     return newArray;
   }
 
